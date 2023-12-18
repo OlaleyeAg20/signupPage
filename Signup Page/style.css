@@ -1,0 +1,106 @@
+:root{
+    --purple: #4E30A3;
+    --purple-light: #5d4adb;
+    --input-bg: #F0EEF0;
+    --font-color: #5F5E5F;
+    --background: #DFDFE9;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    line-height: 150%;
+    box-sizing: border-box;
+}
+
+body{
+    color: var(--font-color);
+    height: 100vh;
+    height: 100svh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--background);
+    font-family: poppins, sans-serif;
+}
+
+.icons{
+    display: flex;
+    gap: 1rem;
+    font-size: 1.5rem;
+}
+
+.container{
+    background: #FFF;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 10px var(--font-color);
+    display: flex;
+    overflow: hidden;
+}
+
+.subContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    padding: 1.5rem;
+    width: 100%;
+    transition: translate .8s;
+}
+
+input{
+    border: none;
+    outline: none;
+    background: var(--input-bg);
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    width: min(90%,250px);
+    box-shadow: 1px 1px 5px var(--font-color);
+}
+
+.btn{
+    border: none;
+    padding: .5rem 1.5rem;
+    border-radius: .5rem;
+    background: var(--purple);
+    font-family: inherit;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: #736ca0;
+}
+
+.secondContainer{
+    background: linear-gradient(180deg, var(--purple-light), var(--purple));
+    color: #FFF;
+    text-align: center;
+    border-radius: 5rem 0 0 5rem;
+}
+
+.transition1{
+    border-radius: 0 5rem 5rem 0;
+    translate: -100%;
+}
+
+.transition2{
+    translate: 100%;
+}
+
+.secondContainer > button{
+    border: #FFF 2px solid;
+}
+
+a{
+    text-decoration: none;
+    color: lightblue;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: lightblue;
+}
+
